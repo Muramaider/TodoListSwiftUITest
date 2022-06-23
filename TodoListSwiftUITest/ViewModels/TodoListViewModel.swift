@@ -11,12 +11,12 @@ class TodoListViewModel: ObservableObject {
     
     func getTodoListItems() {
         
-        Webservice().getAllTodos(url: Constants.Urls.allTodoList) { result in
+        Webservice().getAllTodos(url: Urls.allTodoList) { result in
             switch result {
             case .success(let todos):
                 print(todos)
             case . failure(let error):
-                print(error.localizedDescription)
+                print("kek\(error.localizedDescription)")
             }
         }
         

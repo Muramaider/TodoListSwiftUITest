@@ -7,8 +7,6 @@
 
 import Foundation
 
-struct Constants {
-    struct Urls {
-        static let allTodoList = URL(string: "dev1.itpw.ru:8013/accounts/profile/my_profile/")!
-    }
+struct Urls {
+    static let allTodoList = URL(string: "http://dev1.itpw.ru:8013/accounts/profile/my_profile/")!
 }
